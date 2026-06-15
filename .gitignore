@@ -1,15 +1,20 @@
-# 编译输出和构建文件夹
-build/
-*.o
-*.so
-*.a
-path_recorder
-
-# 录制的数据文件
+# 屏蔽高频录制的 CSV 和 NPY 数据文件
 *.csv
-*.m
+*.npy
 
-# IDE 配置 (如果你用 VSCode 或其他)
-.vscode/
-.idea/
+# 屏蔽录制的示教视频
+*.avi
+*.mp4
 
+# 屏蔽日志文件夹
+Log/
+
+# 屏蔽 C++ 编译生成的 build 文件夹及可执行程序
+build/
+bin/
+path_recorder
+path_recorder_controller
+
+# 屏蔽 Python 的缓存文件
+__pycache__/
+*.pyc
